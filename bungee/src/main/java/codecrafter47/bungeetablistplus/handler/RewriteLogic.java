@@ -26,7 +26,6 @@ import de.codecrafter47.bungeetablistplus.bungee.compat.PropertyUtil;
 import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.UserConnection;
 import net.md_5.bungee.connection.LoginResult;
-import net.md_5.bungee.protocol.packet.PlayerListItem;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -98,7 +97,7 @@ public class RewriteLogic extends AbstractPacketHandler {
             }
         }
 
-        PacketListenerResult result = super.onPlayerListPacket(packet);
+        /*PacketListenerResult result = super.onPlayerListPacket(packet);*/
         return result == PacketListenerResult.PASS && modified ? PacketListenerResult.MODIFIED : result;
     }
 

@@ -21,7 +21,6 @@ import codecrafter47.bungeetablistplus.protocol.AbstractPacketHandler;
 import codecrafter47.bungeetablistplus.protocol.PacketHandler;
 import codecrafter47.bungeetablistplus.protocol.PacketListenerResult;
 import net.md_5.bungee.UserConnection;
-import net.md_5.bungee.protocol.packet.PlayerListItem;
 
 public class GetGamemodeLogic extends AbstractPacketHandler {
 
@@ -32,6 +31,7 @@ public class GetGamemodeLogic extends AbstractPacketHandler {
         this.userConnection = userConnection;
     }
 
+    /*
     @Override
     public PacketListenerResult onPlayerListPacket(PlayerListItem packet) {
         if (packet.getAction() == PlayerListItem.Action.ADD_PLAYER || packet.getAction() == PlayerListItem.Action.UPDATE_GAMEMODE) {
@@ -42,5 +42,5 @@ public class GetGamemodeLogic extends AbstractPacketHandler {
             }
         }
         return super.onPlayerListPacket(packet);
-    }
+    }*/
 }

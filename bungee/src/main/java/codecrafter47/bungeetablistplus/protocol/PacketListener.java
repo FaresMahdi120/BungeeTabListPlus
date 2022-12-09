@@ -24,7 +24,6 @@ import net.md_5.bungee.ServerConnection;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.protocol.PacketWrapper;
 import net.md_5.bungee.protocol.packet.PlayerListHeaderFooter;
-import net.md_5.bungee.protocol.packet.PlayerListItem;
 import net.md_5.bungee.protocol.packet.Team;
 
 import java.util.List;
@@ -59,7 +58,7 @@ public class PacketListener extends MessageToMessageDecoder<PacketWrapper> {
                             return;
                         }
                     } else if (packetWrapper.packet instanceof PlayerListItem) {
-                        result = handler.onPlayerListPacket((PlayerListItem) packetWrapper.packet);
+                        /*result = handler.onPlayerListPacket((PlayerListItem) packetWrapper.packet);*/
                         handled = true;
                     } else if (packetWrapper.packet instanceof PlayerListHeaderFooter) {
                         result = handler.onPlayerListHeaderFooterPacket((PlayerListHeaderFooter) packetWrapper.packet);
